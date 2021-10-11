@@ -162,6 +162,7 @@ void PlayMode::update(float elapsed) {
 			walkmesh->walk_in_triangle(player.at, remain, &end, &time);
 			player.at = end;
 			if (time == 1.0f) {
+				std::cout << "Finished within triangle" << std::endl;
 				//finished within triangle:
 				remain = glm::vec3(0.0f);
 				break;
