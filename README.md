@@ -2,7 +2,7 @@
 
 Author: Anna Li
 
-Design: You're an intern right out of freshman year of college, with a burning desire to leave a good impression on your boss. Your first task is a simple one: bring her a cup of coffee ASAP.
+Design: You're an intern fresh out of freshman year of college, with a burning desire to leave a good impression on your boss. Your first task is a simple one: bring her a cup of coffee ASAP.
 
 Screen Shot:
 
