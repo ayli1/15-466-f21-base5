@@ -2,6 +2,7 @@
 
 #include "Scene.hpp"
 #include "WalkMesh.hpp"
+#include "Sound.hpp"
 
 #include <glm/glm.hpp>
 
@@ -39,4 +40,6 @@ struct PlayMode : Mode {
 
 	glm::vec2 boss_coords = glm::vec2(-11.35f, 9.57f); // (x, y) location of boss
 	bool delivered = false; // Has the coffee been delivered?!!
+
+	std::shared_ptr< Sound::PlayingSample > office_loop;
 };

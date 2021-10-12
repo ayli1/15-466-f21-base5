@@ -45,6 +45,10 @@ Load< WalkMeshes > phonebank_walkmeshes(LoadTagDefault, []() -> WalkMeshes const
 	return ret;
 });
 
+Load< Sound::Sample > office_sample(LoadTagDefault, []() -> Sound::Sample const * {
+	return new Sound::Sample(data_path("office_ambience.wav"));
+});
+
 PlayMode::PlayMode() : scene(*phonebank_scene) {
 	//create a player transform:
 	scene.transforms.emplace_back();
@@ -69,6 +73,7 @@ PlayMode::PlayMode() : scene(*phonebank_scene) {
 
 	orig_player = player;
 
+	office_loop = Sound::loop(*office_sample, 2.0f);
 }
 
 PlayMode::~PlayMode() {
@@ -238,8 +243,6 @@ void PlayMode::update(float elapsed) {
 	if (!delivered && (glm::distance(glm::vec2(player.transform->position.x, player.transform->position.y), boss_coords) < 1.2f)) {
 		delivered = true;
 	}
-
-	//std::cout << glm::to_string(player.transform->position) << std::endl;
 
 	//reset button press counters:
 	left.downs = 0;
