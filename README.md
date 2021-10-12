@@ -1,8 +1,8 @@
-# (TODO: your game's title)
+# Covfefe
 
-Author: (TODO: your name)
+Author: Anna Li
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: You're an intern right out of freshman year of college, with a burning desire to leave a good impression on your boss. Your first task is a simple one: bring her a cup of coffee ASAP.
 
 Screen Shot:
 
@@ -10,9 +10,13 @@ Screen Shot:
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Use the WASD keys to move and the mouse to change the camera view. Your goal is to quickly get from one corner of the office to the other, where your boss (in yellow) awaits her hot coffee.
+(Hint: Those doors look kinda sussy, don't they?)
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources:
+
+Blender assets created by Anna Li.
+Office ambient sound from https://freesound.org/people/Walter_Odington/sounds/32380/
 
 This game was built with [NEST](NEST.md).
 
