@@ -23,7 +23,7 @@ struct PlayMode : Mode {
 	struct Button {
 		uint8_t downs = 0;
 		uint8_t pressed = 0;
-	} left, right, down, up;
+	} left, right, down, up, reset;
 
 	//local copy of the game scene (so code can change it during gameplay):
 	Scene scene;
@@ -35,5 +35,8 @@ struct PlayMode : Mode {
 		Scene::Transform *transform = nullptr;
 		//camera is at player's head and will be pitched by mouse up/down motion:
 		Scene::Camera *camera = nullptr;
-	} player;
+	} player, orig_player;
+
+	glm::vec2 boss_coords = glm::vec2(-11.35f, 9.57f); // (x, y) location of boss
+	bool delivered = false; // Has the coffee been delivered?!!
 };
